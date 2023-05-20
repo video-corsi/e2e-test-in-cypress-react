@@ -10,24 +10,26 @@ import Ex1Visit from './examples/5-query/Ex1Visit';
 import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
+import Ex2Get from "./examples/5-query/Ex2Get";
 
 export const routes = [
-    // pages
-    { path: "/home", element: <Home /> },
-    { path: "/ant-demo", element: <AntDemo /> },
-    // examples
-    { path: "/playground", element: <Playground />,  },
-    // CHAPTER 1
-    { path: "/1-fundamentals/ex1", element: <Ex1HelloCypress />,  },
-    { path: "/1-fundamentals/ex2", element: <Ex2MyFirstRealTest /> },
-    // CHAPTER 2
-    { path: "/2-asserting/ex1-chai-jquery", element: <Ex1ChaiJQuery /> },
-    { path: "/2-asserting/ex2-chai-implicit", element: <Ex2ChaiImplicitSuject /> },
-    { path: "/2-asserting/ex3-beforeEach", element: <Ex3BeforeEach /> },
-    { path: "/2-asserting/ex4-assertion", element: <Ex4AssertionDemo /> },
-    // CHAPTER 4: cypress and react
-    // CHAPTER 5: query
-    { path: "/5-query/ex1-visit", element: <Ex1Visit /> },
-    { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
-    { path: '*', element: <Navigate to="home" /> },
+  // pages
+  { path: "/home", element: <Home /> },
+  { path: "/ant-demo", element: <AntDemo /> },
+  // examples
+  { path: "/playground", element: <Playground />,  },
+  // CHAPTER 1
+  { path: "/1-fundamentals/ex1", element: <Ex1HelloCypress />,  },
+  { path: "/1-fundamentals/ex2", element: <Ex2MyFirstRealTest /> },
+  // CHAPTER 2
+  { path: "/2-asserting/ex1-chai-jquery", element: <Ex1ChaiJQuery /> },
+  { path: "/2-asserting/ex2-chai-implicit", element: <Ex2ChaiImplicitSuject /> },
+  { path: "/2-asserting/ex3-beforeEach", element: <Ex3BeforeEach /> },
+  { path: "/2-asserting/ex4-assertion", element: <Ex4AssertionDemo /> },
+  // CHAPTER 4: cypress and react
+  // CHAPTER 5: query
+  { path: "/5-query/ex1-visit", element: <Ex1Visit /> },
+  { path: "/5-query/ex2-get", element: <Ex2Get /> },
+  { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
+  { path: '*', element: <Navigate to="home" /> },
 ];
