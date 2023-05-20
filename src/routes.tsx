@@ -25,6 +25,7 @@ export const routes = [
     { path: "/2-asserting/ex2-chai-implicit", element: <Ex2ChaiImplicitSuject /> },
     { path: "/2-asserting/ex3-beforeEach", element: <Ex3BeforeEach /> },
     { path: "/2-asserting/ex4-assertion", element: <Ex4AssertionDemo /> },
+    // CHAPTER 4: cypress and react
     // CHAPTER 5: query
     { path: "/5-query/ex1-visit", element: <Ex1Visit /> },
     { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
