@@ -12,6 +12,7 @@ import Ex3Contains from "./examples/5-query/Ex3Contains";
 import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
+import Ex4GetVsContains from "./examples/5-query/Ex4GetVsContains";
 
 export const routes = [
   // pages
@@ -32,6 +33,7 @@ export const routes = [
   { path: "/5-query/ex1-visit", element: <Ex1Visit /> },
   { path: "/5-query/ex2-get", element: <Ex2Get /> },
   { path: "/5-query/ex3-contains", element: <Ex3Contains /> },
+  { path: "/5-query/ex4-get-vs-contains", element: <Ex4GetVsContains /> },
   { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
   { path: '*', element: <Navigate to="home" /> },
 ];
