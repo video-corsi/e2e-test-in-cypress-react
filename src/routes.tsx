@@ -15,9 +15,11 @@ import {Ex7AChildren, Ex7BChildren} from "./examples/5-query/Ex7Children";
 import Ex8Parent from "./examples/5-query/Ex8Parent";
 import Ex9Closest from "./examples/5-query/Ex9Closest";
 import {Ex10AWithin, Ex10BWithin} from "./examples/5-query/Ex10Within";
+import {Ex11ASibling, Ex11BSibling} from "./examples/5-query/Ex11Sibiling";
 import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
+
 
 export const routes = [
   // pages
@@ -46,6 +48,8 @@ export const routes = [
   { path: "/5-query/ex9-closest", element: <Ex9Closest /> },
   { path: "/5-query/ex10-a-within", element: <Ex10AWithin /> },
   { path: "/5-query/ex10-b-within", element: <Ex10BWithin /> },
+  { path: "/5-query/ex11-a-sibling", element: <Ex11ASibling /> },
+  { path: "/5-query/ex11-b-sibling", element: <Ex11BSibling /> },
   { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
   { path: '*', element: <Navigate to="home" /> },
 ];
