@@ -13,6 +13,7 @@ import Ex4GetVsContains from "./examples/5-query/Ex4GetVsContains";
 import Ex5ContainsAndGet from "./examples/5-query/Ex5ContainsAndGet";
 import {Ex7AChildren, Ex7BChildren} from "./examples/5-query/Ex7Children";
 import Ex8Parent from "./examples/5-query/Ex8Parent";
+import Ex9Closest from "./examples/5-query/Ex9Closest";
 import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
@@ -41,6 +42,7 @@ export const routes = [
   { path: "/5-query/ex7-a-children", element: <Ex7AChildren /> },
   { path: "/5-query/ex7-b-children", element: <Ex7BChildren /> },
   { path: "/5-query/ex8-parent", element: <Ex8Parent /> },
+  { path: "/5-query/ex9-closest", element: <Ex9Closest /> },
   { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
   { path: '*', element: <Navigate to="home" /> },
 ];
