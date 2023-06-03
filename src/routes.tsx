@@ -5,7 +5,6 @@ import Ex1ChaiJQuery from './examples/2-asserting/Ex1ChaiJquery';
 import Ex2ChaiImplicitSuject from './examples/2-asserting/Ex2ChaiImplicitSuject';
 import Ex3BeforeEach from './examples/2-asserting/Ex3BeforeEach';
 import Ex4AssertionDemo from './examples/2-asserting/Ex4AssertionDemo';
-import Ex14AutomaticWaiting from './examples/5-query/Ex14AutomaticWaiting';
 import Ex1Visit from './examples/5-query/Ex1Visit';
 import Ex2Get from "./examples/5-query/Ex2Get";
 import Ex3Contains from "./examples/5-query/Ex3Contains";
@@ -16,10 +15,12 @@ import Ex8Parent from "./examples/5-query/Ex8Parent";
 import Ex9Closest from "./examples/5-query/Ex9Closest";
 import {Ex10AWithin, Ex10BWithin} from "./examples/5-query/Ex10Within";
 import {Ex11ASibling, Ex11BSibling} from "./examples/5-query/Ex11Sibiling";
+import Ex12Alias from "./examples/5-query/Ex12Alias";
+import Ex13ExistVsVisible from "./examples/5-query/Ex13ExistVsVisible";
+import Ex14AutomaticWaiting from './examples/5-query/Ex14AutomaticWaiting';
 import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
-import Ex12Alias from "./examples/5-query/Ex12Alias";
 
 
 export const routes = [
@@ -52,6 +53,7 @@ export const routes = [
   { path: "/5-query/ex11-a-sibling", element: <Ex11ASibling /> },
   { path: "/5-query/ex11-b-sibling", element: <Ex11BSibling /> },
   { path: "/5-query/ex12-alias", element: <Ex12Alias /> },
+  { path: "/5-query/ex13-exist-vs-visible", element: <Ex13ExistVsVisible /> },
   { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
   { path: '*', element: <Navigate to="home" /> },
 ];
