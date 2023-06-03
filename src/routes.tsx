@@ -19,6 +19,7 @@ import Ex12Alias from "./examples/5-query/Ex12Alias";
 import Ex13ExistVsVisible from "./examples/5-query/Ex13ExistVsVisible";
 import Ex14AutomaticWaiting from './examples/5-query/Ex14AutomaticWaiting';
 import Ex15Find from "./examples/5-query/Ex15Find";
+import Ex16Invoke from "./examples/5-query/Ex16Invoke";
 import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
@@ -56,5 +57,6 @@ export const routes = [
   { path: "/5-query/ex13-exist-vs-visible", element: <Ex13ExistVsVisible /> },
   { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
   { path: "/5-query/ex15-find", element: <Ex15Find /> },
+  { path: "/5-query/ex16-invoke", element: <Ex16Invoke /> },
   { path: '*', element: <Navigate to="home" /> },
 ];
