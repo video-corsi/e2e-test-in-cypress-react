@@ -19,6 +19,7 @@ import {Ex11ASibling, Ex11BSibling} from "./examples/5-query/Ex11Sibiling";
 import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
+import Ex12Alias from "./examples/5-query/Ex12Alias";
 
 
 export const routes = [
@@ -50,6 +51,7 @@ export const routes = [
   { path: "/5-query/ex10-b-within", element: <Ex10BWithin /> },
   { path: "/5-query/ex11-a-sibling", element: <Ex11ASibling /> },
   { path: "/5-query/ex11-b-sibling", element: <Ex11BSibling /> },
+  { path: "/5-query/ex12-alias", element: <Ex12Alias /> },
   { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
   { path: '*', element: <Navigate to="home" /> },
 ];
