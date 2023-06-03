@@ -25,13 +25,13 @@ import Ex14AutomaticWaiting from './examples/5-query/Ex14AutomaticWaiting';
 import Ex15Find from "./examples/5-query/Ex15Find";
 import Ex16Invoke from "./examples/5-query/Ex16Invoke";
 import Playground from './examples/Playground';
-import AntDemo from './pages/AntDemo';
+// import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
 
 export const routes = [
   // pages
   { path: "/home", element: <Home /> },
-  { path: "/ant-demo", element: <AntDemo /> },
+  /*{ path: "/ant-demo", element: <AntDemo /> },*/
   // examples
   { path: "/playground", element: <Playground />,  },
   // CHAPTER 1
