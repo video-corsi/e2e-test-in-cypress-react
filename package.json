@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "e2e": "npx cypress open",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "e2e": "npx cypress open",
+    "pocketbase:": "./server/pocketbase serve",
+    "e2e:mac": "npm run pocketbase:mac && npm run e2e"
   },
   "dependencies": {
     "antd": "^5.4.5",

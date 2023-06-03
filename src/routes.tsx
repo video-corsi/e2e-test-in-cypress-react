@@ -1,4 +1,7 @@
 import { Navigate } from 'react-router-dom';
+import Ex1CommandSimpleLogin from './examples/09-commands-and-page-object/Ex1CommandSimpleLogin';
+import HomeExampleForCommands from './examples/09-commands-and-page-object/Ex1HomeExampleForCommands';
+import Ex4OrganizeInPageObject from './examples/09-commands-and-page-object/Ex4OrganizeInPageObject';
 import Ex1HelloCypress from './examples/1-fundamentals/Ex1HelloCypress';
 import Ex2MyFirstRealTest from './examples/1-fundamentals/Ex2MyFirstRealTest';
 import Ex1ChaiJQuery from './examples/2-asserting/Ex1ChaiJquery';
@@ -54,4 +57,16 @@ export const routes = [
   { path: "/5-query/ex12-alias", element: <Ex12Alias /> },
   { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
   { path: '*', element: <Navigate to="home" /> },
+
+  // CHAPTER 9: Command & Page Object
+  { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
+  { path: "/9-commands-page-object/ex1-command-simple-login", element: <Ex1CommandSimpleLogin /> },
+  { path: "/9-commands-page-object/ex4-organize-in-page-object", element: <Ex4OrganizeInPageObject /> },
+
+
+  // CHAPTER 10: pocketbase
+  // don't need to define routes. Just run:
+  // npm run pocketbase
+  // (don't work in Window. Follow instruction in the course
+
 ];

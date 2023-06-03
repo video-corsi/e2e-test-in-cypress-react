@@ -1,4 +1,4 @@
-import { PropsWithChildren, useEffect, useState } from "react";
+import { PropsWithChildren, useState } from "react";
 
 interface ToggableProps {
   title: string;
@@ -8,12 +8,8 @@ interface ToggableProps {
 }
 
 export function Toggable(props: PropsWithChildren<ToggableProps>) {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
-  const { children, icon, open = true, onIconClick, title } = props;
-
-  useEffect(() => {
-    setIsOpen(!!open);
-  }, [open]);
+  const { children,  title, icon, onIconClick, open = true, } = props;
+  const [isOpen, setIsOpen] = useState<boolean>(open);
 
   function iconClickHandler(e: React.MouseEvent<HTMLElement>) {
     e.stopPropagation();
@@ -23,17 +19,14 @@ export function Toggable(props: PropsWithChildren<ToggableProps>) {
   return (
     <div className="bg-slate-200">
       <div
-        className="flex justify-between items-center border-b border-b-white p-3"
+        className="flex justify-between items-center bg-slate-800 text-white p-3"
         onClick={() => setIsOpen((o) => !o)}
       >
-        <div className="text-xl ">{title}</div>
+        <div className="text-xl">{title}</div>
         {icon && <div onClick={iconClickHandler}>{icon}</div>}
       </div>
 
-      {
-        isOpen &&
-          <div className="p-3">{children}</div>
-      }
+      { isOpen &&  <div className="p-3">{children}</div> }
 
     </div>
   );

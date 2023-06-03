@@ -1,13 +1,18 @@
 /// <reference types="cypress" />
 
 Cypress.Commands.add('login', (username: string, password: string) => {
-  cy.visit('playground')
+  /*cy.visit('playground')
   cy.contains('Hello Cypress').should('exist');
   cy.get('input[name="username"]').type(username);
   cy.get('input[name="password"]').type(password);
   cy.contains('SIGN IN').click()
   cy.url().should('include', '/')
-  cy.contains('Home Page').should('exist');
+  cy.contains('Home Page').should('exist');*/
+  cy.visit('/9-commands-page-object/ex1-command-simple-login')
+  if (username === '' || password === '') return;
+  cy.get('input[name="username"]').type(username);
+  cy.get('input[name="password"]').type(password);
+
 })
 
 

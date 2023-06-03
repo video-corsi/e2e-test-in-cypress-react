@@ -1,17 +1,15 @@
 class LoginPage {
   elements = {
-    title: () => cy.contains('Hello Cypress'),
-    usernameInput: () =>  cy.get('input[name="username"]'),
-    usernamePassword: () =>  cy.get('input[name="password"]'),
-    loginBtn: () =>  cy.contains('SIGN IN')
-  };
+    emailInput: () => cy.get('input[type="email"]'),
+    passInput: () => cy.get('input[type="password"]'),
+    loginButton: () => cy.contains('Login')
+  }
 
   login(username: string, password: string) {
-    cy.visit('playground')
-    this.elements.title().should('exist');
-    this.elements.usernameInput().type(username);
-    this.elements.usernamePassword().type(password)
-    this.elements.loginBtn().click()
+    cy.visit('http://127.0.0.1:8090/_/#/login')
+    this.elements.emailInput().type(username)
+    this.elements.passInput().type(password)
+    this.elements.loginButton().click()
   }
 }
 

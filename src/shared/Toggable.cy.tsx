@@ -44,16 +44,16 @@ describe("<Toggable /> ", () => {
 
 
   it("should display an icon in the titlebar", () => {
-    mount(<Toggable title="My Profile" icon="💩" />);
-    // SOLUTION 1: check if the document contains '💩'
-    cy.document().contains("💩");
+    mount(<Toggable title="My Profile" icon="⭐️">Lorem ipsum</Toggable>);
+    // SOLUTION 1: check if the document contains '⭐️'
+    cy.document().contains("⭐️");
 
-    // SOLUTION 2: check if the titlebar contains a closest icon '💩'
+    // SOLUTION 2: check if the titlebar contains a closest icon '⭐️'
     cy.document()
       .contains("My Profile")
       .siblings()
       .within(() => {
-        cy.contains("💩").should('exist')
+        cy.contains("⭐️").should('exist')
       });
   });
 
@@ -62,12 +62,12 @@ describe("<Toggable /> ", () => {
     mount(
       <Toggable
         title="My Profile"
-        icon="💩"
+        icon="⭐️"
         onIconClick={onClickSpy}
         open
-      />
+      > Lorem ipsum </Toggable>
     );
-    cy.document().contains("💩").click()
+    cy.document().contains("⭐️").click()
     cy.get("@onClickSpy").should("have.been.called");
   });
 });
