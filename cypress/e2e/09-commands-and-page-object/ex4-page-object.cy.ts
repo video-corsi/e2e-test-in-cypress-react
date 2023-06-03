@@ -1,5 +1,5 @@
 import { User } from '../../../src/model/user.ts';
-import homePage from '../../pages/homePage.ts';
+import homePage from '../../pages/homePage2.ts';
 
 const mockList: User[] = [
   { id: 1, name: "A", username: "Username A" },
@@ -32,7 +32,7 @@ describe("HomePage Content", () => {
       mockList
     )
 
-    cy.visit('http://localhost:5173/home')
+    homePage.visit()
     cy.get('[data-testid="userList"]').as('list')
   })
 

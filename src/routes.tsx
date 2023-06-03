@@ -8,6 +8,7 @@ import Ex1ChaiJQuery from './examples/2-asserting/Ex1ChaiJquery';
 import Ex2ChaiImplicitSuject from './examples/2-asserting/Ex2ChaiImplicitSuject';
 import Ex3BeforeEach from './examples/2-asserting/Ex3BeforeEach';
 import Ex4AssertionDemo from './examples/2-asserting/Ex4AssertionDemo';
+import Ex17AntD from './examples/5-query/Ex17AntD';
 import Ex1Visit from './examples/5-query/Ex1Visit';
 import Ex2Get from "./examples/5-query/Ex2Get";
 import Ex3Contains from "./examples/5-query/Ex3Contains";
@@ -61,6 +62,7 @@ export const routes = [
   { path: "/5-query/ex14-automatic-waiting", element: <Ex14AutomaticWaiting /> },
   { path: "/5-query/ex15-find", element: <Ex15Find /> },
   { path: "/5-query/ex16-invoke", element: <Ex16Invoke /> },
+  { path: "/5-query/ex17-antd", element: <Ex17AntD /> },
   { path: '*', element: <Navigate to="home" /> },
 
   // CHAPTER 9: Command & Page Object
