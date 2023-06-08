@@ -33,6 +33,7 @@ import Ex4FilteredList from "./examples/06-list/Ex4FilteredList";
 import {Ex1AMouseEvents, Ex1BMouseEvents} from "./examples/07-forms/Ex1MouseEvents";
 import Ex2KeyboardEvents from "./examples/07-forms/Ex2KeyboardEvents";
 import Ex3FocusBlur from "./examples/07-forms/Ex3FocusBlur";
+import Ex4FormsCheckBoxDateSelect from "./examples/07-forms/Ex4FormsCheckBoxDateSelect";
 
 export const routes = [
   // pages
@@ -84,6 +85,7 @@ export const routes = [
   { path: '/7-forms/ex1-b-mouse-events', element: <Ex1BMouseEvents /> },
   { path: '/7-forms/ex2-keyboard-events', element: <Ex2KeyboardEvents  /> },
   { path: '/7-forms/ex3-focus-blur', element: <Ex3FocusBlur  /> },
+  { path: '/7-forms/ex4-forms-checkbox-date-select', element: <Ex4FormsCheckBoxDateSelect  /> },
 
   // CHAPTER 9: Command & Page Object
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
