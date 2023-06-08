@@ -28,6 +28,7 @@ import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
 import Ex1ListGetFind from "./examples/06-list/Ex1ListGetFind";
 import Ex2FirstLastEq from "./examples/06-list/Ex2FirstLastEq";
+import {Ex3AWrapEach, Ex3BWrapEach} from "./examples/06-list/Ex3WrapEach";
 
 export const routes = [
   // pages
@@ -69,6 +70,8 @@ export const routes = [
 
   { path: '/6-list/ex1-list-get-find', element: <Ex1ListGetFind /> },
   { path: '/6-list/ex2-first-last-eq', element: <Ex2FirstLastEq /> },
+  { path: '/6-list/ex3-a-wrap-each', element: <Ex3AWrapEach /> },
+  { path: '/6-list/ex3-b-wrap-each', element: <Ex3BWrapEach /> },
 
   // CHAPTER 9: Command & Page Object
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
