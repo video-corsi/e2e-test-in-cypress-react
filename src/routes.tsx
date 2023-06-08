@@ -26,6 +26,7 @@ import Ex16Invoke from "./examples/5-query/Ex16Invoke";
 import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
+import Ex1ListGetFind from "./examples/06-list/Ex1ListGetFind";
 
 export const routes = [
   // pages
@@ -62,6 +63,11 @@ export const routes = [
   { path: "/5-query/ex15-find", element: <Ex15Find /> },
   { path: "/5-query/ex16-invoke", element: <Ex16Invoke /> },
   { path: '*', element: <Navigate to="home" /> },
+
+  // CHAPTER 6: List
+
+  { path: '/6-list/ex1-list-get-find', element: <Ex1ListGetFind /> },
+
 
   // CHAPTER 9: Command & Page Object
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
