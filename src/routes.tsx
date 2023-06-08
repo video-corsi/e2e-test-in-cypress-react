@@ -27,6 +27,7 @@ import Playground from './examples/Playground';
 import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
 import Ex1ListGetFind from "./examples/06-list/Ex1ListGetFind";
+import Ex2FirstLastEq from "./examples/06-list/Ex2FirstLastEq";
 
 export const routes = [
   // pages
@@ -67,7 +68,7 @@ export const routes = [
   // CHAPTER 6: List
 
   { path: '/6-list/ex1-list-get-find', element: <Ex1ListGetFind /> },
-
+  { path: '/6-list/ex2-first-last-eq', element: <Ex2FirstLastEq /> },
 
   // CHAPTER 9: Command & Page Object
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
