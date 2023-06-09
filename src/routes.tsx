@@ -39,6 +39,7 @@ import Ex6FormValidations from "./examples/07-forms/Ex6FormValidations";
 import Ex7MultipleSubscribes from "./examples/07-forms/Ex7MultipleSubscribes";
 import Ex1HttpInterceptor from "./examples/08-interceptors/Ex1HttpInterceptor";
 import Ex2MockResponse from "./examples/08-interceptors/Ex2MockResponse";
+import Ex3CrudMockStub from "./examples/08-interceptors/Ex3CrudMockStub";
 
 export const routes = [
   // pages
@@ -98,6 +99,7 @@ export const routes = [
   // CHAPTER 8: Interceptors
   { path: '/8-interceptors/ex1-http-interceptor', element: <Ex1HttpInterceptor  /> },
   { path: '/8-interceptors/ex2-mock-response', element: <Ex2MockResponse  /> },
+  { path: '/8-interceptors/ex3-crud-mock-stub', element: <Ex3CrudMockStub  /> },
 
   // CHAPTER 9: Command & Page Object
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
