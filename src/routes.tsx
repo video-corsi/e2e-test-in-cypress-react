@@ -35,6 +35,7 @@ import Ex2KeyboardEvents from "./examples/07-forms/Ex2KeyboardEvents";
 import Ex3FocusBlur from "./examples/07-forms/Ex3FocusBlur";
 import Ex4FormsCheckBoxDateSelect from "./examples/07-forms/Ex4FormsCheckBoxDateSelect";
 import Ex5MultipleCheckbox from "./examples/07-forms/Ex5MultipleCheckbox";
+import Ex6FormValidations from "./examples/07-forms/Ex6FormValidations";
 
 export const routes = [
   // pages
@@ -88,6 +89,7 @@ export const routes = [
   { path: '/7-forms/ex3-focus-blur', element: <Ex3FocusBlur  /> },
   { path: '/7-forms/ex4-forms-checkbox-date-select', element: <Ex4FormsCheckBoxDateSelect  /> },
   { path: '/7-forms/ex5-multiple-checkbox', element: <Ex5MultipleCheckbox  /> },
+  { path: '/7-forms/ex6-form-validations', element: <Ex6FormValidations  /> },
 
   // CHAPTER 9: Command & Page Object
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
