@@ -27,6 +27,21 @@ import Ex16Invoke from "./examples/5-query/Ex16Invoke";
 import Playground from './examples/Playground';
 // import AntDemo from './pages/AntDemo';
 import Home from './pages/Home';
+import Ex1ListGetFind from "./examples/06-list/Ex1ListGetFind";
+import Ex2FirstLastEq from "./examples/06-list/Ex2FirstLastEq";
+import {Ex3AWrapEach, Ex3BWrapEach} from "./examples/06-list/Ex3WrapEach";
+import Ex4FilteredList from "./examples/06-list/Ex4FilteredList";
+import {Ex1AMouseEvents, Ex1BMouseEvents} from "./examples/07-forms/Ex1MouseEvents";
+import Ex2KeyboardEvents from "./examples/07-forms/Ex2KeyboardEvents";
+import Ex3FocusBlur from "./examples/07-forms/Ex3FocusBlur";
+import Ex4FormsCheckBoxDateSelect from "./examples/07-forms/Ex4FormsCheckBoxDateSelect";
+import Ex5MultipleCheckbox from "./examples/07-forms/Ex5MultipleCheckbox";
+import Ex6FormValidations from "./examples/07-forms/Ex6FormValidations";
+import Ex7MultipleSubscribes from "./examples/07-forms/Ex7MultipleSubscribes";
+import Ex1HttpInterceptor from "./examples/08-interceptors/Ex1HttpInterceptor";
+import Ex2MockResponse from "./examples/08-interceptors/Ex2MockResponse";
+import Ex3CrudMockStub from "./examples/08-interceptors/Ex3CrudMockStub";
+import Ex4InterceptorError from "./examples/08-interceptors/Ex4InterceptorError";
 
 export const routes = [
   // pages
@@ -64,6 +79,31 @@ export const routes = [
   { path: "/5-query/ex16-invoke", element: <Ex16Invoke /> },
   { path: "/5-query/ex17-antd", element: <Ex17AntD /> },
   { path: '*', element: <Navigate to="home" /> },
+
+  // CHAPTER 6: List
+
+  { path: '/6-list/ex1-list-get-find', element: <Ex1ListGetFind /> },
+  { path: '/6-list/ex2-first-last-eq', element: <Ex2FirstLastEq /> },
+  { path: '/6-list/ex3-a-wrap-each', element: <Ex3AWrapEach /> },
+  { path: '/6-list/ex3-b-wrap-each', element: <Ex3BWrapEach /> },
+  { path: '/6-list/ex4-filtered-list', element: <Ex4FilteredList /> },
+
+  // CHAPTER 7: Forms
+
+  { path: '/7-forms/ex1a-a-mouse-events', element: <Ex1AMouseEvents /> },
+  { path: '/7-forms/ex1-b-mouse-events', element: <Ex1BMouseEvents /> },
+  { path: '/7-forms/ex2-keyboard-events', element: <Ex2KeyboardEvents  /> },
+  { path: '/7-forms/ex3-focus-blur', element: <Ex3FocusBlur  /> },
+  { path: '/7-forms/ex4-forms-checkbox-date-select', element: <Ex4FormsCheckBoxDateSelect  /> },
+  { path: '/7-forms/ex5-multiple-checkbox', element: <Ex5MultipleCheckbox  /> },
+  { path: '/7-forms/ex6-form-validations', element: <Ex6FormValidations  /> },
+  { path: '/7-forms/ex7-multiple-subscribes', element: <Ex7MultipleSubscribes  /> },
+
+  // CHAPTER 8: Interceptors
+  { path: '/8-interceptors/ex1-http-interceptor', element: <Ex1HttpInterceptor  /> },
+  { path: '/8-interceptors/ex2-mock-response', element: <Ex2MockResponse  /> },
+  { path: '/8-interceptors/ex3-crud-mock-stub', element: <Ex3CrudMockStub  /> },
+  { path: '/8-interceptors/ex4-interceptor-error', element: <Ex4InterceptorError  /> },
 
   // CHAPTER 9: Command & Page Object
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
