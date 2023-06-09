@@ -37,6 +37,7 @@ import Ex4FormsCheckBoxDateSelect from "./examples/07-forms/Ex4FormsCheckBoxDate
 import Ex5MultipleCheckbox from "./examples/07-forms/Ex5MultipleCheckbox";
 import Ex6FormValidations from "./examples/07-forms/Ex6FormValidations";
 import Ex7MultipleSubscribes from "./examples/07-forms/Ex7MultipleSubscribes";
+import Ex1HttpInterceptor from "./examples/08-interceptors/Ex1HttpInterceptor";
 
 export const routes = [
   // pages
@@ -92,6 +93,9 @@ export const routes = [
   { path: '/7-forms/ex5-multiple-checkbox', element: <Ex5MultipleCheckbox  /> },
   { path: '/7-forms/ex6-form-validations', element: <Ex6FormValidations  /> },
   { path: '/7-forms/ex7-multiple-subscribes', element: <Ex7MultipleSubscribes  /> },
+
+  // CHAPTER 8: Interceptors
+  { path: '/8-interceptors/ex1-http-interceptor', element: <Ex1HttpInterceptor  /> },
 
   // CHAPTER 9: Command & Page Object
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
