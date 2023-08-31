@@ -7,8 +7,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <hr/>
-      {element}
+
+      <div className="mx-auto max-w-screen-lg mt-6">
+        {element}
+      </div>
     </>
   )
 }

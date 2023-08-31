@@ -9,3 +9,7 @@ input {
 button {
   @apply border border-black p-3 bg-sky-400 hover:bg-sky-600 disabled:opacity-30
 }
+
+pre {
+  @apply bg-slate-200 p-3 rounded-lg
+}

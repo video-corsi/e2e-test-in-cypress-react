@@ -78,7 +78,6 @@ export const routes = [
   { path: "/5-query/ex15-find", element: <Ex15Find /> },
   { path: "/5-query/ex16-invoke", element: <Ex16Invoke /> },
   { path: "/5-query/ex17-antd", element: <Ex17AntD /> },
-  { path: '*', element: <Navigate to="home" /> },
 
   // CHAPTER 6: List
 
@@ -109,6 +108,7 @@ export const routes = [
   { path: "/9-commands-page-object/home-example", element: <HomeExampleForCommands /> },
   { path: "/9-commands-page-object/ex1-command-simple-login", element: <Ex1CommandSimpleLogin /> },
   { path: "/9-commands-page-object/ex4-organize-in-page-object", element: <Ex4OrganizeInPageObject /> },
+  // { path: 'Home', element: <Navigate to="home" /> },
 
 
   // CHAPTER 10: pocketbase
