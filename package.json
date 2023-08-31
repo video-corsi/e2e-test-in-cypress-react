@@ -9,7 +9,7 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "e2e": "npx cypress open",
-    "pocketbase": "./server/pocketbase serve",
+    "pocketbase": "./server/pocketbase serve"
   },
   "dependencies": {
     "antd": "^5.4.5",
