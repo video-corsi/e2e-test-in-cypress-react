@@ -9,8 +9,7 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "e2e": "npx cypress open",
-    "pocketbase:": "./server/pocketbase serve",
-    "e2e:mac": "npm run pocketbase:mac && npm run e2e"
+    "pocketbase": "./server/pocketbase serve",
   },
   "dependencies": {
     "antd": "^5.4.5",
@@ -29,7 +28,7 @@
     "@vitejs/plugin-react": "^4.0.0-beta.0",
     "autoprefixer": "^10.4.14",
     "circular-dependency-plugin": "^5.2.2",
-    "cypress": "^12.10.0",
+    "cypress": "^13.0.0",
     "cypress-slow-down": "^1.2.1",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
